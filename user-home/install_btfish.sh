@@ -11,7 +11,7 @@ realuser="$(whoami)"
 if [ -f "/system/bin/app_process" ]; then
 	SUDO=""
 else
-	if [ "$(id)" == "0" ]; then
+	if [ "$(id -u)" == "0" ]; then
 		SUDO=""
 	else
 		SUDO="sudo -s"
