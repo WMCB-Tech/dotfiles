@@ -16,7 +16,7 @@ else
 	else
 		SUDO="sudo -s"
 	fi
-if
+fi
 
 # setup fish if haven't installed yet
 if ! "$(command -v fish)" >/dev/null 2>&1; then
